@@ -30,17 +30,3 @@ The engine continuously profiles every memory reference loop to compute two prim
 2.  **Memory Utilization Efficiency ($U_{mem}$):**
     $$U_{mem} = \frac{1}{\text{Clock}_{\text{total}}} \sum_{t=1}^{\text{Clock}_{\text{total}}} \left( \frac{\text{Occupied Frame Slots}_t}{\text{Total Allocated Capacity}} \times 100\% \right)$$
 
----
-
-## 🛠️ Installation & Setup
-
-### Prerequisites
-Ensure you have **Python 3.8+** installed on your system.
-
-### 1. Clone or Extract the Project Files
-Ensure your project workspace contains the following file layout:
-```text
-├── core.py                 # Abstract base classes & hardware descriptors
-├── standard_algorithms.py  # FIFO, LRU, Second-Chance Clock
-├── advanced_algorithms.py  # LRU-2, MFU, WSClock
-└── app.py                  # Streamlit graphical dashboard interface
